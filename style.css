@@ -1,0 +1,154 @@
+body{
+    background-image:url("weather.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: aliceblue;
+    font-family: "Courier New", Courier, monospace;
+}
+.my-page-header {
+    grid-area: nav-header;
+    padding: 10px;
+    height: 150px;
+ }
+ td{
+   padding-left: 40px;
+   padding-bottom: 30px;
+ }
+
+ .my-page-body {
+    grid-area: main-body;
+     
+    padding: 10px;
+    height:200px;
+ }
+.cities{
+   padding: 0px;
+}
+ .my-page-sidebar {
+   grid-area: nav-side;
+   border:none;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+   height:600px;
+   background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+   backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+ 
+ }
+ .grid{
+    display: flex;
+ }
+ 
+.cond{
+   font-size: 50px;
+   padding-top: 100px;
+   padding-left: 10px;;
+}
+ .my-page-footer {
+    grid-area: footer;
+    height:150px;
+    padding-bottom: 90px;
+ }
+.cr{
+   font-size: x-large;
+   padding-right: 100px;
+   padding-left: 20px;
+}
+ .value{
+    font-size: 70px;
+    margin-top: 50px;
+    padding: 10px;
+ }
+
+ .city{
+    padding-top: 70px;
+    font-size:35px;
+ }
+ .det{
+   padding: 20px;
+   padding-left: 40px;;
+ }
+span{
+    font-size: 20px;
+}
+
+ .my-page {
+    display: grid;
+    grid-template-areas:
+        "nav-header  nav-header  nav-side  nav-side"
+        "main-body   main-body   nav-side       nav-side"
+        "footer      footer      nav-side     nav-side"
+        "footer     footer      nav-side    nav-side";
+ }
+ .search{
+   font-size: 30px;
+   text-align: left;
+   border: none;
+   padding: 20px;
+   
+ }
+ #s{
+   background-color: #ff794d;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ }
+ #s:hover{
+   background-color: #ffc299;
+ }
+ #s:active {
+   
+   background-color: #ff794d;
+ }
+ .icon{
+    color: aliceblue;
+ }
+ input[type=text] {
+   color:bisque;
+   font-weight: normals;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+   border: none;
+      background: transparent;
+      border-bottom: 1px solid #ff794d;
+      outline: none;
+ }
+ input[type=text]:focus {
+    width: 60%;
+ }
+
+ ::-webkit-input-placeholder {
+    color: #fff;
+ }
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+ }
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+ }
+
+ :-ms-input-placeholder {
+    color: #fff;
+ }
+
+.list{
+   padding-left: 300px;
+}
+ul{
+   list-style: none;
+}
+.time{
+   font-weight: normal;
+   font-size: large;
+}

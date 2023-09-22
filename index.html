@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="D:\CodingWorkspace\Weather\cloud-solid.svg">
+    <title>WeatherToday</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="my-page">
+        <header class="my-page-header"><h1>Weather Today</h1></header>
+        <div class="my-page-body"></div>
+        <nav class="my-page-sidebar">
+            <div class=" search">
+                <span>
+                    <input type="text" placeholder="Choose Location" class="city-input" id="city-input1">
+                </span>
+                
+                <span >
+                    <button id="s" onclick="searchCity()"><img alt="search"
+                        src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/48/null/external-search-user-interface-tanah-basah-detailed-outline-tanah-basah.png" /></button>
+                    
+                </span> 
+            </div>
+            <div class="cities">
+            <ul>
+                <li>Chennai</li>
+                <li> <br></li>
+                <li>Delhi</li>
+                <li><br> </li>
+                <li>Mumbai</li>
+                <li><br> </li>
+                <li>Kolkata</li>
+            </ul></div>
+            <hr>
+            <h3 class="det">Weather details</h3>
+            <table>
+                <tr><td>cloudy</td><td id="cl" class="list">80%</td>
+                    <tr>
+                        <td>Humidity</td>
+                        <td id="hum" class="list">80%</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td id="ws" class="list">0Kph</td>
+                    </tr>
+                    <tr>
+                        <td>Visibility</td>
+                        <td id="cl" class="list">80%</td>
+                    </tr>
+                    
+                
+            </table>
+        </nav>
+        <footer class="my-page-footer grid">
+            <div>
+                <br>
+                <br>
+                <h1 class="value" id="temp">16°</h1>
+            </div>
+            <div >
+                <h1 class="city" ><span id="city-name">London</span><br><span class="time" id="t">06.30-Monday,9 Sep'23 </h1>  
+            </div>
+            <div class="cond">
+                <img alt="cloudy" id="icon" src="https://img.icons8.com/color/48/null/partly-cloudy-day--v1.png"/><span class="cr" id="condition">Cloudy</span>
+            </div>
+            
+
+            
+        </footer>
+    </div>
+</body>
+</html>
